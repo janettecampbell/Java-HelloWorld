@@ -43,10 +43,23 @@ public class Main {
         double y5 = Double.parseDouble(x5) + 2;
 
         // Math Class
-        
+        int result1 = Math.round(1.1F);
+        int result2 = (int) Math.ceil(1.1F);
+        int result3 = (int) Math.floor(1.1F);
+        int result4 = Math.max(1, 2);
+        // Random formula for random Math.floor(Math.random() * (max - min + 1) + min);
+        double result5 = Math.random() * 100; // random number from 0 to 100
+        int result6 = (int) Math.round(Math.random() * 100);
+
 
         Date now = new Date();
 
+        System.out.println(result6);
+        System.out.println(result5);
+        System.out.println(result4);
+        System.out.println(result3);
+        System.out.println(result2);
+        System.out.println(result1);
         System.out.println(y5);
         System.out.println(y4);
         System.out.println(y3);
