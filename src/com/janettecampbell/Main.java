@@ -22,9 +22,16 @@ public class Main {
         String message = "  Hello \"World\"" + "!!  ";
         int[][] numbers = {{1, 2, 3}, {4, 5, 6}};
         numbers[0][0] = 1;
+        final float PI = 3.14F;
+        double result = (double) 10 / (double) 3;
+        int x1 = 1;
+        x1 += 2;
+
 
         Date now = new Date();
 
+        System.out.println(x1);
+        System.out.println(result);
         System.out.println(Arrays.deepToString(numbers));
         System.out.println(message.trim());
         System.out.println(message);
