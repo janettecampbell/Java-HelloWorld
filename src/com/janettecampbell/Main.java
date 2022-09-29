@@ -1,11 +1,15 @@
 package com.janettecampbell;
 
 import java.awt.*;
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 
 public class Main {
+
 
     public static void main(String[] args) {
         byte age = 30;
@@ -13,6 +17,7 @@ public class Main {
         float price = 10.99F;
         char letter = 'A';
         boolean isEligible = false;
+        Date now = new Date();
         byte x = 1;
         byte y = x;
         x = 2;
@@ -51,9 +56,16 @@ public class Main {
         double result5 = Math.random() * 100; // random number from 0 to 100
         int result6 = (int) Math.round(Math.random() * 100);
 
+        // Format Numbers
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String result7 = currency.format(1234567.891);
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        String result8 = percent.format(0.1);
+        String result9 = NumberFormat.getPercentInstance().format(0.1);
 
-        Date now = new Date();
-
+        System.out.println(result9);
+        System.out.println(result8);
+        System.out.println(result7);
         System.out.println(result6);
         System.out.println(result5);
         System.out.println(result4);
