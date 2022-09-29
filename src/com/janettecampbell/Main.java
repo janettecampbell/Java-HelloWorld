@@ -7,6 +7,7 @@ import java.text.ParsePosition;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
@@ -62,6 +63,18 @@ public class Main {
         NumberFormat percent = NumberFormat.getPercentInstance();
         String result8 = percent.format(0.1);
         String result9 = NumberFormat.getPercentInstance().format(0.1);
+
+        // Read Input
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age1 = scanner.nextByte();
+        System.out.println("You are " + age1);
+        scanner.nextLine();
+
+        System.out.print("Name: ");
+        String name = scanner.nextLine().trim();
+        System.out.println("You are " + name);
+
 
         System.out.println(result9);
         System.out.println(result8);
