@@ -1,5 +1,7 @@
 package com.janettecampbell;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,6 +10,9 @@ public class Main {
         float price = 10.99F;
         char letter = 'A';
         boolean isEligible = false;
+
+        Date now = new Date();
+        System.out.println(now);
 
         System.out.println(age);
         System.out.println("Hello World");
